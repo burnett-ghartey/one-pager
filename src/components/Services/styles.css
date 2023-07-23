@@ -1,0 +1,67 @@
+.services{
+    position: relative;
+}
+
+.bg_service{
+    position: absolute !important;
+    right: 0;
+    height: 700px;
+    width: 65%;
+    position: relative;
+    right: 0;
+    background:  #0059C2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: grid;
+    place-items: center;
+    
+}
+.circle_wrapper{
+    height: 700px;
+    width: 700px;
+}
+.bg_circle{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 0.561388px solid #E3E3E3;
+}
+.service_section{
+    
+    position: relative;
+    top: 40px;
+    z-index: 99;
+    background: var(--bg-primary);
+    padding: 60px 20px;
+    
+}
+.service_grid{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+.service_grid_item{
+    height: 120px;
+    width: 280px;
+    background: #FFFFFF;
+border: 10px solid #FFFFFF;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+border-radius: 0px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 2px;
+}
+
+@media (max-width: 480px){
+    .bg_service {
+        position: absolute !important;
+        left: 0;
+        height: 100%;
+        width: 100%;     
+}
+}

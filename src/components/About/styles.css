@@ -1,0 +1,158 @@
+.about{
+    padding:100px 0;
+    text-align: left;  
+    height: auto;
+    width: 100%;
+    position: relative;
+    
+    /* background: red; */
+}
+.double_rings{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url('../../images/doubleRings.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: -1;
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* background: pink; */
+}
+/* .double_rings img{
+    object-fit: cover;
+    width: 50%;
+} */
+.about_grid{
+    margin-top: 25px;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-column-gap: 1em;
+}
+
+.about_grid img{
+    height: 350px;
+    border-radius: 50px;
+    object-fit: cover;
+    width: 100%;
+}
+.what_we_do{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.what_we_do:first-child{
+    width: 100%;
+}
+.wwdo_content{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #515151;
+}
+.mission{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+}
+.mission_content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color:#797979
+}
+.mi_pic img{
+    height: 200px;
+    border-radius: 50px;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+@media (max-width: 1280px){
+    .double_rings{
+        top: -1px;
+    }
+   
+    
+}
+@media (max-width: 1024px){
+    .double_rings{
+        top: -95px;
+    }
+    .about_grid img {
+        height: 340px; 
+        border-radius: 25px; 
+    }
+    
+}
+@media (max-width: 960px){
+    
+    .what_we_do{
+        margin-top: 30px;
+        gap: 10px;
+    }
+    .wwdo_content{
+        width: 510px;
+    }
+    .mission {
+        /* grid-template-columns: 1fr; */
+        grid-gap:1em;
+    }
+    .mi_pic img{
+        border-radius: 25px;
+    }
+    .service_grid_item{
+        width: 203px !important;
+    }  
+    
+    .double_rings{
+        top: -306px;
+    }
+    .mi_pic img{
+        height: 250px;
+    }
+}
+@media (max-width: 720px){
+    
+}
+
+@media (max-width: 480px){
+    .about {
+        padding: 40px 0;
+    }
+    .about_grid{
+        height: 150px;
+    }
+    .about_grid img {
+        height: 150px;
+        border-radius: 25px;
+    }
+    .double_rings{
+        top: -350px;
+    }
+  
+    
+    .what_we_do{
+        flex-direction: column;
+    }
+    .wwdo_content{
+        width: 400px;
+    }
+    .mission {
+        grid-template-columns: 1fr;
+        grid-gap:1em;
+    }
+    
+    
+    .service_grid_item{
+        width: 100% !important;
+    }
+}
