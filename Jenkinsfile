@@ -4,8 +4,7 @@ pipeline {
     stage('Back-end') {
       agent {
         docker {
-          image 'maven:3.8.1-adoptopenjdk-11' 
-          args '-i --entrypoint='
+          image 'maven:3.8.1-adoptopenjdk-11'
         }
       }
       steps {
@@ -16,7 +15,6 @@ pipeline {
       agent {
         docker { 
           image 'node:16-alpine'
-          args '-i --entrypoint='
         }
         
       }
